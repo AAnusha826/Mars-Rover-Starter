@@ -1,9 +1,10 @@
 class Command {
-   constructor(commandType, value = null) {
-     this.commandType = commandType;
+   constructor(commandType, value) {
+     
      if (!commandType) {
-       throw Error("Command type required.");
+       throw new Error("Command type required.");
      }
+     this.commandType = commandType;
      this.value = value;
    }
 }

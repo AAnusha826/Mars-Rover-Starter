@@ -1,3 +1,5 @@
+const Command = require('./command');
+const Message = require('./message');
 class Rover {
     constructor(position) {
         this.position = position;
